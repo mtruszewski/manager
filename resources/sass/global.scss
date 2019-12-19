@@ -1,0 +1,56 @@
+[id^=slider-range] {
+    height: 1.4em !important;
+    padding: 0 !important;
+    position: relative !important;
+    margin: 0.5em 1em !important;
+    padding: 0 !important;
+    border-radius: 50px !important;
+    .ui-slider-handle {
+        background: $blue;
+        cursor: default;
+        height: 1.7em;
+        position: absolute;
+        width: 1.7em;
+        z-index: 2;
+        margin-left: -0.9em;
+        top: -0.2em;
+        border-radius: 50px;
+    }
+}
+
+label {
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+table {
+    tr {
+        td {
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.card-body,
+.card-header {
+    padding: 0.75rem;
+    h2 {
+        margin: 0;
+    }
+}
+
+.btn {
+    margin: 10px 0;
+    &:disabled {
+        opacity: 0.3;
+    }
+}

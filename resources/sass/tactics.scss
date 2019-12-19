@@ -1,0 +1,230 @@
+.tactics {
+    display: flex;    
+    flex-direction: column;
+    &__field {
+        display: inline-block;
+        position: relative;
+        width: 358px; 
+        height: 493px; 
+        background-image:url('/images/field.png');
+        // overflow: hidden;
+
+        .player__popup {
+            top: 44px !important;
+            left: 50px !important;
+        }
+
+        .player__name {
+            display: none;
+            font-size: 12px;
+            line-height: 1.1;
+            position: absolute;
+            color: $white;
+            text-shadow: -1px -1px 0 $darkGreen, 1px -1px 0 $darkGreen, -1px 1px 0 $darkGreen, 1px 1px 0 $darkGreen;
+            z-index: 1;
+        }
+
+        & > div {
+            transition: all .3s ease-in-out;
+        }
+
+        // subs
+        
+        .position_12 {
+            bottom: 340px;
+            left: 360px;
+        }
+        .position_13 {
+            bottom: 280px;
+            left: 360px;
+        }
+        .position_14 {
+            bottom: 220px;
+            left: 360px;
+        }
+        .position_15 {
+            bottom: 160px;
+            left: 360px;
+        }
+        .position_16 {
+            bottom: 100px;
+            left: 360px;
+        }
+
+        &.f_442 {
+            // positions
+            .position_1 {
+                bottom: 40px;
+                left: 159px;
+            }
+            .position_2 {
+                bottom: 160px;
+                left: 55px;
+            }
+            .position_3 {
+                bottom: 120px;
+                left: 130px;
+            }
+            .position_4 {
+                bottom: 120px;
+                right: 130px;
+            }
+            .position_5 {
+                bottom: 160px;
+                right: 55px;
+            }
+            .position_6 {
+                bottom: 280px;
+                left: 55px;
+            }
+            .position_7 {
+                bottom: 238px;
+                left: 130px;
+            }
+            .position_8 {
+                bottom: 238px;
+                left: 190px;
+            }
+            .position_9 {
+                bottom: 280px;
+                left: 265px;
+            }
+            .position_10 {
+                bottom: 380px;
+                left: 130px;
+            }
+            .position_11 {
+                bottom: 380px;
+                left: 190px;
+            }
+            .position_11 {
+                bottom: 380px;
+                left: 190px;
+            }
+        }
+        &.f_433 {
+            // positions
+            .position_1 {
+                bottom: 40px;
+                left: 159px;
+            }
+            .position_2 {
+                bottom: 160px;
+                left: 55px;
+            }
+            .position_3 {
+                bottom: 120px;
+                left: 130px;
+            }
+            .position_4 {
+                bottom: 120px;
+                right: 130px;
+            }
+            .position_5 {
+                bottom: 160px;
+                right: 55px;
+            }
+            .position_6 {
+                bottom: 238px;
+                left: 100px;
+            }
+            .position_7 {
+                bottom: 238px;
+                left: 159px;
+            }
+            .position_8 {
+                bottom: 238px;
+                left: 220px;
+            }
+            .position_9 {
+                bottom: 380px;
+                left: 100px;
+            }
+            .position_10 {
+                bottom: 380px;
+                left: 159px;
+            }
+            .position_11 {
+                bottom: 380px;
+                left: 220px;
+            }
+        }
+    }
+
+    .ui-droppable-hover {
+        background-color: green !important;
+    }
+
+    .empty-field {
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        position: absolute;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        &.remove-background {
+            background-color: transparent;
+        }
+    }
+
+    .players {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .player__name {
+            display: flex !important;
+        }
+    }
+
+    .player {
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        &__tshirt {
+            cursor: pointer;
+            width: 40px;
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            filter: drop-shadow(1px 1px 1px black);
+            transition: width .3s ease-in-out;
+            margin: 5px 20px 5px 0;
+
+            &:hover {
+                width:45px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        &__number {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        &__popup {
+            display: none;
+            font-size: 10px;
+
+            &.active {
+                display: flex;
+            }
+
+            table {
+                width: 230px;
+            }
+
+        }
+
+    }
+}
